@@ -21,8 +21,13 @@ public class TaskController {
         return taskService.listAll();
     }
 
-    @PostMapping("/create")
-    public Task create(@RequestBody Task task){
-        return taskService.createTask(task);
+    @PostMapping("/create/{username}")
+    public Task create(@RequestBody Task task, @PathVariable String username){
+        return taskService.createTask(task, username);
+    }
+
+    @GetMapping("/{username}")
+    public List<Task> findAllByUser(@PathVariable String username){
+        return taskService.listByName(username);
     }
 }
