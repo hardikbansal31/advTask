@@ -24,4 +24,8 @@ public class User {
     private String pass;
 
     private String role = "USER";
+
+//    @OneToMany
+//    @JoinColumn(name = "id")
+//    private Task tasks;
 }

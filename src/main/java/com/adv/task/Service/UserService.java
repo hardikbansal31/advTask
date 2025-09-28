@@ -1,4 +1,4 @@
-package com.adv.task;
+package com.adv.task.Service;
 
 import com.adv.task.Entities.User;
 import com.adv.task.Repository.UserRepo;

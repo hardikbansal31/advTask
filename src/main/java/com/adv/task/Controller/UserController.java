@@ -1,7 +1,7 @@
 package com.adv.task.Controller;
 
 import com.adv.task.Entities.User;
-import com.adv.task.UserService;
+import com.adv.task.Service.UserService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
